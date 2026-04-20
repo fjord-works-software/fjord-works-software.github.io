@@ -17,9 +17,13 @@
 <section class="relative overflow-hidden px-6 py-24 sm:py-32">
 	<CircuitBackdrop />
 	<div class="relative mx-auto max-w-4xl text-center">
-		<p class="mb-4 text-sm font-semibold uppercase tracking-widest text-brand-primary">
-			Fjord Works Software LLC
-		</p>
+		<div class="mb-8 flex justify-center">
+			<img
+				src="/images/FjordWorksLogo.png"
+				alt="Fjord Works Software"
+				class="h-28 w-auto drop-shadow-lg"
+			/>
+		</div>
 		<h1 class="font-display text-5xl font-bold leading-tight text-brand-text sm:text-6xl">
 			Software built to<br /><span class="text-brand-primary">last and perform</span>
 		</h1>

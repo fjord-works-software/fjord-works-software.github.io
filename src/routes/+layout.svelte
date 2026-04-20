@@ -20,11 +20,12 @@
 
 <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-bg/95 backdrop-blur-sm">
 	<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-		<a
-			href="/"
-			class="font-display text-xl font-bold text-brand-primary transition-colors hover:text-brand-primary-deep"
-		>
-			Fjord Works
+		<a href="/" aria-label="Fjord Works Software — home">
+			<img
+				src="/images/FjordWorksLogo.png"
+				alt="Fjord Works Software"
+				class="h-10 w-auto"
+			/>
 		</a>
 
 		<ul class="hidden items-center gap-8 md:flex">
@@ -101,8 +102,10 @@
 	<div class="mx-auto max-w-6xl px-6 py-12">
 		<div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
 			<div>
-				<a href="/" class="font-display text-lg font-bold text-brand-primary">Fjord Works</a>
-				<p class="mt-2 text-sm text-brand-muted">
+				<a href="/" aria-label="Fjord Works Software — home">
+					<img src="/images/FjordWorksLogo.png" alt="Fjord Works Software" class="h-12 w-auto" />
+				</a>
+				<p class="mt-3 text-sm text-brand-muted">
 					Custom software solutions built for clarity and longevity.
 				</p>
 			</div>
