@@ -1,42 +1,28 @@
-# sv
+# Fjord Works Software
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+[![Deploy to GitHub Pages](https://github.com/fjord-works-software/fjord-works-software.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/fjord-works-software/fjord-works-software.github.io/actions/workflows/deploy.yml)
 
-## Creating a project
+Marketing and portfolio site for [Fjord Works Software LLC](https://fjordworkssoftware.com).
 
-If you're seeing this, you've probably already done this step. Congrats!
+**Stack:** SvelteKit · Svelte 5 · Tailwind CSS v4 · mdsvex · adapter-static  
+**Deploys to:** GitHub Pages via GitHub Actions on push to `main`
 
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
+## Development
 
 ```sh
-# recreate this project
-npx sv@0.15.1 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" sveltekit-adapter="adapter:static" mdsvex --no-download-check --no-install .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```sh
 npm run build
+npm run preview   # preview the static output locally
 ```
 
-You can preview the production build with `npm run preview`.
+The static site is output to `build/`. The `CNAME` file in `static/` ensures the custom domain is preserved on every deploy.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deploy
+
+Push to `main`. The [deploy workflow](.github/workflows/deploy.yml) builds and publishes to GitHub Pages automatically (~2 min).
