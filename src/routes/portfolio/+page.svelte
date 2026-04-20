@@ -19,6 +19,7 @@
 		eyebrow="Portfolio"
 		heading="Selected work"
 		lead="Case studies and project showcases coming soon."
+		level={1}
 	/>
 	<div class="mt-12">
 		<Button href="/contact">Discuss Your Project</Button>

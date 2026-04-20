@@ -25,6 +25,7 @@
 			eyebrow="Contact"
 			heading="Let's talk"
 			lead="Tell us about your project — what you're trying to do and where you're at. We'll get back to you within one business day."
+			level={1}
 		/>
 
 		<div class="mt-12 space-y-8">

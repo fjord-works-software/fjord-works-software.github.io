@@ -18,5 +18,6 @@
 		eyebrow="Blog"
 		heading="Writing & insights"
 		lead="Posts on software development, architecture, and engineering practice. Coming soon."
+		level={1}
 	/>
 </div>

@@ -21,6 +21,13 @@
 	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
+<a
+	href="#main-content"
+	class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-100 focus:rounded focus:bg-brand-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-brand-bg"
+>
+	Skip to main content
+</a>
+
 <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-bg/95 backdrop-blur-sm">
 	<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 		<a href="/" aria-label="Fjord Works Software — home">
@@ -97,7 +104,7 @@
 	{/if}
 </header>
 
-<main>
+<main id="main-content">
 	{@render children()}
 </main>
 

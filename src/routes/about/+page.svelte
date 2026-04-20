@@ -47,6 +47,7 @@
 			eyebrow="About Us"
 			heading="Built from 18 years of watching businesses work around their software"
 			lead="Small businesses deserve tools that fit the way they actually work — not the other way around."
+			level={1}
 		/>
 	</div>
 </section>

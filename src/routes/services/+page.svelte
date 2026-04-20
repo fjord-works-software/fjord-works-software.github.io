@@ -38,6 +38,7 @@
 			eyebrow="Services"
 			heading="What we build"
 			lead="Websites, web applications, and integrations — each one designed around what you actually need, not a template."
+			level={1}
 		/>
 	</div>
 </section>
