@@ -16,6 +16,9 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<meta property="og:site_name" content="Fjord Works Software" />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-bg/95 backdrop-blur-sm">

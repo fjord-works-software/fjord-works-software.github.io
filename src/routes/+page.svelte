@@ -11,6 +11,45 @@
 		name="description"
 		content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity."
 	/>
+	<link rel="canonical" href="https://fjordworkssoftware.com/" />
+	<meta property="og:title" content="Fjord Works Software — Custom Software Development" />
+	<meta property="og:description" content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity." />
+	<meta property="og:url" content="https://fjordworkssoftware.com/" />
+	<meta name="twitter:title" content="Fjord Works Software — Custom Software Development" />
+	<meta name="twitter:description" content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity." />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "WebSite",
+				"@id": "https://fjordworkssoftware.com/#website",
+				"url": "https://fjordworkssoftware.com/",
+				"name": "Fjord Works Software",
+				"description": "Custom software development for businesses that need clarity, performance, and longevity."
+			},
+			{
+				"@type": "LocalBusiness",
+				"@id": "https://fjordworkssoftware.com/#business",
+				"name": "Fjord Works Software LLC",
+				"url": "https://fjordworkssoftware.com/",
+				"email": "isaac.daniel.bailey@proton.me",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Searcy",
+					"addressRegion": "AR",
+					"addressCountry": "US"
+				},
+				"areaServed": "US",
+				"serviceType": ["Custom Software Development", "Web Application Development", "Software Consulting"],
+				"founder": {
+					"@type": "Person",
+					"name": "Isaac Bailey"
+				}
+			}
+		]
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero -->

@@ -11,6 +11,32 @@
 		name="description"
 		content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development."
 	/>
+	<link rel="canonical" href="https://fjordworkssoftware.com/about" />
+	<meta property="og:title" content="About — Fjord Works Software" />
+	<meta property="og:description" content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development." />
+	<meta property="og:url" content="https://fjordworkssoftware.com/about" />
+	<meta name="twitter:title" content="About — Fjord Works Software" />
+	<meta name="twitter:description" content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development." />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"@id": "https://fjordworkssoftware.com/about#founder",
+		"name": "Isaac Bailey",
+		"jobTitle": "Founder",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Fjord Works Software LLC",
+			"url": "https://fjordworkssoftware.com/"
+		},
+		"alumniOf": {
+			"@type": "CollegeOrUniversity",
+			"name": "Harding University"
+		},
+		"url": "https://fjordworkssoftware.com/about",
+		"sameAs": ["https://github.com/fjord-works-software"]
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero -->

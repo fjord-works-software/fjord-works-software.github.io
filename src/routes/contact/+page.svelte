@@ -10,6 +10,12 @@
 		name="description"
 		content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond."
 	/>
+	<link rel="canonical" href="https://fjordworkssoftware.com/contact" />
+	<meta property="og:title" content="Contact — Fjord Works Software" />
+	<meta property="og:description" content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond." />
+	<meta property="og:url" content="https://fjordworkssoftware.com/contact" />
+	<meta name="twitter:title" content="Contact — Fjord Works Software" />
+	<meta name="twitter:description" content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond." />
 </svelte:head>
 
 <section class="relative overflow-hidden px-6 py-20">

@@ -22,6 +22,12 @@
 		name="description"
 		content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks."
 	/>
+	<link rel="canonical" href="https://fjordworkssoftware.com/services" />
+	<meta property="og:title" content="Services — Fjord Works Software" />
+	<meta property="og:description" content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks." />
+	<meta property="og:url" content="https://fjordworkssoftware.com/services" />
+	<meta name="twitter:title" content="Services — Fjord Works Software" />
+	<meta name="twitter:description" content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks." />
 </svelte:head>
 
 <!-- Hero -->
