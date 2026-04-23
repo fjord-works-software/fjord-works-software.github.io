@@ -70,7 +70,7 @@
 			<img
 				src="/images/FjordWorksLogo.png"
 				alt="Fjord Works Software"
-				class="h-77 w-auto shrink-0 rounded-2xl drop-shadow-lg"
+				class="h-88 w-auto shrink-0 rounded-2xl drop-shadow-lg"
 			/>
 			<h1 class="font-display text-5xl font-bold leading-tight text-brand-text sm:text-6xl">
 				Software built to <span class="text-brand-primary">last and perform</span>
