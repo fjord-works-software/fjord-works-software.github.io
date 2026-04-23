@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { page } from '$app/state';
 
 	let { children } = $props();
 	let menuOpen = $state(false);
@@ -12,6 +13,10 @@
 		{ href: '/blog', label: 'Blog' },
 		{ href: '/contact', label: 'Contact' }
 	];
+
+	function isActive(href: string) {
+		return page.url.pathname === href || page.url.pathname.startsWith(href + '/');
+	}
 </script>
 
 <svelte:head>
@@ -30,12 +35,9 @@
 
 <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-bg/95 backdrop-blur-sm">
 	<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-		<a href="/" aria-label="Fjord Works Software — home">
-			<img
-				src="/images/FjordWorksLogo.png"
-				alt="Fjord Works Software"
-				class="h-10 w-auto"
-			/>
+		<a href="/" aria-label="Fjord Works Software — home" class="flex flex-col leading-none">
+			<span class="font-display text-lg font-bold text-brand-text">Fjord Works <span class="font-display text-xs font-semibold uppercase tracking-widest text-brand-primary">Software</span></span>
+			
 		</a>
 
 		<ul class="hidden items-center gap-8 md:flex">
@@ -43,7 +45,9 @@
 				<li>
 					<a
 						{href}
-						class="text-sm font-medium text-brand-muted transition-colors hover:text-brand-primary"
+						class="text-sm font-medium transition-colors hover:text-brand-primary {isActive(href)
+							? 'text-brand-primary'
+							: 'text-brand-muted'}"
 					>
 						{label}
 					</a>
@@ -92,7 +96,9 @@
 					<li>
 						<a
 							{href}
-							class="block font-medium text-brand-muted transition-colors hover:text-brand-primary"
+							class="block font-medium transition-colors hover:text-brand-primary {isActive(href)
+								? 'text-brand-primary'
+								: 'text-brand-muted'}"
 							onclick={() => (menuOpen = false)}
 						>
 							{label}
@@ -112,10 +118,10 @@
 	<div class="mx-auto max-w-6xl px-6 py-12">
 		<div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
 			<div>
-				<a href="/" aria-label="Fjord Works Software — home">
-					<img src="/images/FjordWorksLogo.png" alt="Fjord Works Software" class="h-12 w-auto" />
+				<a href="/" aria-label="Fjord Works Software — home" class="flex flex-col leading-none">
+					<span class="font-display text-lg font-bold text-brand-text">Fjord Works <span class="font-display text-xs font-semibold uppercase tracking-widest text-brand-primary">Software</span></span>
 				</a>
-				<p class="mt-3 text-sm text-brand-muted">
+				<p class="mt-4 text-sm text-brand-muted">
 					Custom software solutions built for clarity and longevity.
 				</p>
 			</div>

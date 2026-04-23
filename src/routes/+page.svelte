@@ -13,66 +13,78 @@
 	/>
 	<link rel="canonical" href="https://fjordworkssoftware.com/" />
 	<meta property="og:title" content="Fjord Works Software — Custom Software Development" />
-	<meta property="og:description" content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity." />
+	<meta
+		property="og:description"
+		content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity."
+	/>
 	<meta property="og:url" content="https://fjordworkssoftware.com/" />
 	<meta name="twitter:title" content="Fjord Works Software — Custom Software Development" />
-	<meta name="twitter:description" content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity." />
+	<meta
+		name="twitter:description"
+		content="Fjord Works Software LLC builds custom web applications and software solutions for businesses that need clarity, performance, and longevity."
+	/>
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@graph": [
-			{
-				"@type": "WebSite",
-				"@id": "https://fjordworkssoftware.com/#website",
-				"url": "https://fjordworkssoftware.com/",
-				"name": "Fjord Works Software",
-				"description": "Custom software development for businesses that need clarity, performance, and longevity."
-			},
-			{
-				"@type": "LocalBusiness",
-				"@id": "https://fjordworkssoftware.com/#business",
-				"name": "Fjord Works Software LLC",
-				"url": "https://fjordworkssoftware.com/",
-				"email": "isaac.daniel.bailey@proton.me",
-				"address": {
-					"@type": "PostalAddress",
-					"addressLocality": "Searcy",
-					"addressRegion": "AR",
-					"addressCountry": "US"
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "https://fjordworkssoftware.com/#website",
+					"url": "https://fjordworkssoftware.com/",
+					"name": "Fjord Works Software",
+					"description": "Custom software development for businesses that need clarity, performance, and longevity."
 				},
-				"areaServed": "US",
-				"serviceType": ["Custom Software Development", "Web Application Development", "Software Consulting"],
-				"founder": {
-					"@type": "Person",
-					"name": "Isaac Bailey"
+				{
+					"@type": "LocalBusiness",
+					"@id": "https://fjordworkssoftware.com/#business",
+					"name": "Fjord Works Software LLC",
+					"url": "https://fjordworkssoftware.com/",
+					"email": "isaac.daniel.bailey@proton.me",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Searcy",
+						"addressRegion": "AR",
+						"addressCountry": "US"
+					},
+					"areaServed": "US",
+					"serviceType": [
+						"Custom Software Development",
+						"Web Application Development",
+						"Software Consulting"
+					],
+					"founder": {
+						"@type": "Person",
+						"name": "Isaac Bailey"
+					}
 				}
-			}
-		]
-	}
+			]
+		}
 	</script>
 </svelte:head>
 
 <!-- Hero -->
 <section class="relative overflow-hidden px-6 py-24 sm:py-32">
 	<CircuitBackdrop />
-	<div class="relative mx-auto max-w-4xl text-center">
-		<div class="mb-8 flex justify-center">
+	<div class="relative mx-auto max-w-4xl">
+		<div class="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-12">
 			<img
 				src="/images/FjordWorksLogo.png"
 				alt="Fjord Works Software"
-				class="h-28 w-auto drop-shadow-lg"
+				class="h-44 w-auto shrink-0 rounded-2xl drop-shadow-lg"
 			/>
+			<h1 class="font-display text-5xl font-bold leading-tight text-brand-text sm:text-6xl">
+				Software built to <span class="text-brand-primary">last and perform</span>
+			</h1>
 		</div>
-		<h1 class="font-display text-5xl font-bold leading-tight text-brand-text sm:text-6xl">
-			Software built to<br /><span class="text-brand-primary">last and perform</span>
-		</h1>
-		<p class="mx-auto mt-6 max-w-2xl text-lg text-brand-muted">
-			We design and build custom web applications for businesses that need reliable, maintainable
-			software — without the overhead of a large agency.
-		</p>
-		<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-			<Button href="/portfolio">View Our Work</Button>
-			<Button href="/contact" variant="secondary">Get in Touch</Button>
+		<div class="mt-8 text-center">
+			<p class="mx-auto max-w-2xl text-lg text-brand-muted">
+				We design and build custom web applications for businesses that need reliable, maintainable
+				software — without the overhead of a large agency.
+			</p>
+			<div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+				<Button href="/portfolio">View Our Work</Button>
+				<Button href="/contact" variant="secondary">Get in Touch</Button>
+			</div>
 		</div>
 	</div>
 </section>
@@ -108,7 +120,8 @@
 				</div>
 				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Web Development</h3>
 				<p class="text-sm text-brand-muted">
-					Fast, accessible web applications using modern frameworks — built to scale with your needs.
+					Fast, accessible web applications using modern frameworks — built to scale with your
+					needs.
 				</p>
 			</Card>
 
@@ -130,9 +143,7 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">
-					Software Consulting
-				</h3>
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Software Consulting</h3>
 				<p class="text-sm text-brand-muted">
 					Architecture reviews, tech stack decisions, and process improvements — pragmatic guidance
 					that moves projects forward.
@@ -189,9 +200,7 @@
 <section class="relative overflow-hidden bg-brand-surface px-6 py-16">
 	<CircuitBackdrop />
 	<div class="relative mx-auto max-w-2xl text-center">
-		<h2 class="font-display text-3xl font-bold text-brand-text">
-			Ready to start a project?
-		</h2>
+		<h2 class="font-display text-3xl font-bold text-brand-text">Ready to start a project?</h2>
 		<p class="mt-4 text-brand-muted">
 			Tell us what you're building. We'll tell you if we're the right fit.
 		</p>
