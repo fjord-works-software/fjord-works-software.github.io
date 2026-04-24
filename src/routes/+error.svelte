@@ -12,13 +12,13 @@
 	<CircuitBackdrop />
 	<div class="relative mx-auto max-w-2xl text-center">
 		<p class="font-display text-8xl font-bold text-brand-primary opacity-30">{page.status}</p>
-		<h1 class="font-display mt-4 text-3xl font-bold text-brand-text">
+		<h1 class="mt-4 font-display text-3xl font-bold text-brand-text">
 			{page.status === 404 ? 'Page not found' : 'Something went wrong'}
 		</h1>
 		<p class="mt-4 text-brand-muted">
 			{page.status === 404
 				? "The page you're looking for doesn't exist or may have moved."
-				: page.error?.message ?? 'An unexpected error occurred.'}
+				: (page.error?.message ?? 'An unexpected error occurred.')}
 		</p>
 		<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
 			<Button href="/">Go home</Button>

@@ -13,29 +13,35 @@
 	/>
 	<link rel="canonical" href="https://fjordworkssoftware.com/about" />
 	<meta property="og:title" content="About — Fjord Works Software" />
-	<meta property="og:description" content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development." />
+	<meta
+		property="og:description"
+		content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development."
+	/>
 	<meta property="og:url" content="https://fjordworkssoftware.com/about" />
 	<meta name="twitter:title" content="About — Fjord Works Software" />
-	<meta name="twitter:description" content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development." />
+	<meta
+		name="twitter:description"
+		content="Fjord Works Software LLC is a custom software consultancy based in Searcy, AR. Founded by Isaac Bailey after 18+ years of software development."
+	/>
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"@id": "https://fjordworkssoftware.com/about#founder",
-		"name": "Isaac Bailey",
-		"jobTitle": "Founder",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Fjord Works Software LLC",
-			"url": "https://fjordworkssoftware.com/"
-		},
-		"alumniOf": {
-			"@type": "CollegeOrUniversity",
-			"name": "Harding University"
-		},
-		"url": "https://fjordworkssoftware.com/about",
-		"sameAs": ["https://github.com/fjord-works-software"]
-	}
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"@id": "https://fjordworkssoftware.com/about#founder",
+			"name": "Isaac Bailey",
+			"jobTitle": "Founder",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Fjord Works Software LLC",
+				"url": "https://fjordworkssoftware.com/"
+			},
+			"alumniOf": {
+				"@type": "CollegeOrUniversity",
+				"name": "Harding University"
+			},
+			"url": "https://fjordworkssoftware.com/about",
+			"sameAs": ["https://github.com/fjord-works-software"]
+		}
 	</script>
 </svelte:head>
 
@@ -54,7 +60,7 @@
 
 <!-- Story -->
 <section class="px-6 py-16">
-	<div class="mx-auto max-w-3xl space-y-5 text-brand-muted leading-relaxed">
+	<div class="mx-auto max-w-3xl space-y-5 leading-relaxed text-brand-muted">
 		<p>
 			Fjord Works came out of a pattern that kept showing up over nearly two decades of software
 			work: small businesses constantly working <em class="text-brand-text not-italic">around</em> their
@@ -74,20 +80,20 @@
 </section>
 
 <!-- Founder -->
-<section class="px-6 py-16 bg-brand-surface">
+<section class="bg-brand-surface px-6 py-16">
 	<div class="mx-auto max-w-4xl">
 		<SectionHeader eyebrow="Founder" heading="Isaac Bailey" />
-		<div class="mt-8 max-w-3xl space-y-4 text-brand-muted leading-relaxed">
+		<div class="mt-8 max-w-3xl space-y-4 leading-relaxed text-brand-muted">
 			<p>
 				Isaac Bailey founded Fjord Works Software after 18+ years of professional software
 				development across a wide range of industries and problem domains. A 2008 graduate of
-				Harding University, he has spent his career close to the problems businesses actually
-				face — and building tools that solve them without creating new ones.
+				Harding University, he has spent his career close to the problems businesses actually face —
+				and building tools that solve them without creating new ones.
 			</p>
 			<p>
-				The idea behind Fjord Works is simple: most small businesses don't need enterprise
-				software or a large agency. They need a capable, straightforward partner who can build
-				exactly what they need and hand it over cleanly.
+				The idea behind Fjord Works is simple: most small businesses don't need enterprise software
+				or a large agency. They need a capable, straightforward partner who can build exactly what
+				they need and hand it over cleanly.
 			</p>
 		</div>
 	</div>
@@ -96,11 +102,7 @@
 <!-- Values -->
 <section class="px-6 py-16">
 	<div class="mx-auto max-w-6xl">
-		<SectionHeader
-			eyebrow="How We Think"
-			heading="What good software means to us"
-			center
-		/>
+		<SectionHeader eyebrow="How We Think" heading="What good software means to us" center />
 		<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
 			<Card>
 				<div class="mb-4 text-brand-primary">
@@ -120,7 +122,7 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Secure</h3>
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Secure</h3>
 				<p class="text-sm text-brand-muted">
 					Security isn't an afterthought. It's built into every project from the first line of code,
 					not patched on at the end.
@@ -145,7 +147,7 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Simple</h3>
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Simple</h3>
 				<p class="text-sm text-brand-muted">
 					The best software is software your team doesn't have to think about. Complexity that
 					doesn't serve the user doesn't belong.
@@ -170,10 +172,10 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Out of Your Way</h3>
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Out of Your Way</h3>
 				<p class="text-sm text-brand-muted">
-					Technology should adapt to how you work, not dictate it. Good software fits into your
-					day and disappears.
+					Technology should adapt to how you work, not dictate it. Good software fits into your day
+					and disappears.
 				</p>
 			</Card>
 		</div>
@@ -184,9 +186,11 @@
 <section class="relative overflow-hidden bg-brand-surface px-6 py-16">
 	<CircuitBackdrop />
 	<div class="relative mx-auto max-w-3xl text-center">
-		<p class="text-sm font-semibold uppercase tracking-wider text-brand-primary mb-3">Location</p>
-		<p class="text-brand-text text-lg font-medium">Based in Searcy, AR</p>
-		<p class="text-brand-muted mt-1 mb-8">Serving clients throughout Central Arkansas and beyond.</p>
+		<p class="mb-3 text-sm font-semibold tracking-wider text-brand-primary uppercase">Location</p>
+		<p class="text-lg font-medium text-brand-text">Based in Searcy, AR</p>
+		<p class="mt-1 mb-8 text-brand-muted">
+			Serving clients throughout Central Arkansas and beyond.
+		</p>
 		<Button href="/contact">Start a Conversation</Button>
 	</div>
 </section>

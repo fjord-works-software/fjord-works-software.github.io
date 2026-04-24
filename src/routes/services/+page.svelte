@@ -24,10 +24,16 @@
 	/>
 	<link rel="canonical" href="https://fjordworkssoftware.com/services" />
 	<meta property="og:title" content="Services — Fjord Works Software" />
-	<meta property="og:description" content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks." />
+	<meta
+		property="og:description"
+		content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks."
+	/>
 	<meta property="og:url" content="https://fjordworkssoftware.com/services" />
 	<meta name="twitter:title" content="Services — Fjord Works Software" />
-	<meta name="twitter:description" content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks." />
+	<meta
+		name="twitter:description"
+		content="Custom websites, web applications, and integrations from Fjord Works Software LLC. Built with .NET, Node.js, and modern frontend frameworks."
+	/>
 </svelte:head>
 
 <!-- Hero -->
@@ -65,8 +71,8 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-xl font-semibold text-brand-text mb-3">Websites</h3>
-				<p class="text-brand-muted text-sm leading-relaxed flex-1">
+				<h3 class="mb-3 font-display text-xl font-semibold text-brand-text">Websites</h3>
+				<p class="flex-1 text-sm leading-relaxed text-brand-muted">
 					Clean, fast websites for businesses and individuals. Marketing sites, portfolio sites,
 					informational sites — built to load fast, look professional, and hold up over time without
 					ongoing maintenance overhead.
@@ -91,11 +97,11 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-xl font-semibold text-brand-text mb-3">Web Applications</h3>
-				<p class="text-brand-muted text-sm leading-relaxed flex-1">
+				<h3 class="mb-3 font-display text-xl font-semibold text-brand-text">Web Applications</h3>
+				<p class="flex-1 text-sm leading-relaxed text-brand-muted">
 					Custom web apps built around your workflow. For businesses and organizations that need
-					software to do something specific — something off-the-shelf tools can't quite do, or
-					force too many compromises to make work.
+					software to do something specific — something off-the-shelf tools can't quite do, or force
+					too many compromises to make work.
 				</p>
 			</Card>
 
@@ -117,11 +123,11 @@
 						/>
 					</svg>
 				</div>
-				<h3 class="font-display text-xl font-semibold text-brand-text mb-3">Integrations</h3>
-				<p class="text-brand-muted text-sm leading-relaxed flex-1">
+				<h3 class="mb-3 font-display text-xl font-semibold text-brand-text">Integrations</h3>
+				<p class="flex-1 text-sm leading-relaxed text-brand-muted">
 					Connect the systems you already use. When data lives in too many places, we build the
-					bridges that move it where it needs to go — without manual entry, copy-paste, or
-					brittle workarounds.
+					bridges that move it where it needs to go — without manual entry, copy-paste, or brittle
+					workarounds.
 				</p>
 			</Card>
 		</div>
@@ -129,7 +135,7 @@
 </section>
 
 <!-- Tech stack -->
-<section class="px-6 py-16 bg-brand-surface">
+<section class="bg-brand-surface px-6 py-16">
 	<div class="mx-auto max-w-4xl">
 		<SectionHeader
 			eyebrow="Stack"
@@ -137,7 +143,7 @@
 			lead="We work across the full stack. If your project needs something not listed here, ask — we're likely familiar with it."
 		/>
 		<div class="mt-8 flex flex-wrap gap-3">
-			{#each stack as tech}
+			{#each stack as tech (tech)}
 				<span
 					class="rounded-full border border-brand-border bg-brand-bg px-4 py-1.5 text-sm font-medium text-brand-text"
 				>
@@ -159,12 +165,12 @@
 		<div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
 			<div>
 				<div
-					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-brand-primary font-display font-bold"
+					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 font-display font-bold text-brand-primary"
 				>
 					1
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Discovery</h3>
-				<p class="text-sm text-brand-muted leading-relaxed">
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Discovery</h3>
+				<p class="text-sm leading-relaxed text-brand-muted">
 					We start with your problem. No code yet — just understanding your workflow, your
 					constraints, and what success actually looks like for your situation.
 				</p>
@@ -172,28 +178,27 @@
 
 			<div>
 				<div
-					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-brand-primary font-display font-bold"
+					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 font-display font-bold text-brand-primary"
 				>
 					2
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Build</h3>
-				<p class="text-sm text-brand-muted leading-relaxed">
-					We build iteratively and keep you in the loop throughout. You see progress as it
-					happens — no black box, no surprises at delivery.
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Build</h3>
+				<p class="text-sm leading-relaxed text-brand-muted">
+					We build iteratively and keep you in the loop throughout. You see progress as it happens —
+					no black box, no surprises at delivery.
 				</p>
 			</div>
 
 			<div>
 				<div
-					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-brand-primary font-display font-bold"
+					class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 font-display font-bold text-brand-primary"
 				>
 					3
 				</div>
-				<h3 class="font-display text-lg font-semibold text-brand-text mb-2">Handoff</h3>
-				<p class="text-sm text-brand-muted leading-relaxed">
-					You receive the source code, documentation, and everything needed to run and maintain
-					your software independently. It's yours — no ongoing dependency on us to keep the
-					lights on.
+				<h3 class="mb-2 font-display text-lg font-semibold text-brand-text">Handoff</h3>
+				<p class="text-sm leading-relaxed text-brand-muted">
+					You receive the source code, documentation, and everything needed to run and maintain your
+					software independently. It's yours — no ongoing dependency on us to keep the lights on.
 				</p>
 			</div>
 		</div>
@@ -204,7 +209,9 @@
 <section class="relative overflow-hidden bg-brand-surface px-6 py-16">
 	<CircuitBackdrop />
 	<div class="relative mx-auto max-w-2xl text-center">
-		<h2 class="font-display text-3xl font-bold text-brand-text">Ready to talk through your project?</h2>
+		<h2 class="font-display text-3xl font-bold text-brand-text">
+			Ready to talk through your project?
+		</h2>
 		<p class="mt-4 text-brand-muted">We'll tell you honestly whether we're the right fit.</p>
 		<div class="mt-8">
 			<Button href="/contact">Get in Touch</Button>

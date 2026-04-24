@@ -11,22 +11,25 @@
 Pulled from the provided logo to keep brand identity consistent across the site.
 
 ### Color Palette
-| Token | Hex | Usage |
-|---|---|---|
-| `--color-bg` | `#1F2428` | Page background (matches logo backdrop) |
-| `--color-surface` | `#2A3036` | Cards, elevated panels |
-| `--color-primary` | `#2DD4BF` | Teal/cyan accent (circuit glow) — CTAs, links, highlights |
-| `--color-primary-deep` | `#0F766E` | Hover state, darker accent |
-| `--color-text` | `#F5F7FA` | Primary text |
-| `--color-text-muted` | `#9CA3AF` | Secondary text, captions |
-| `--color-border` | `#374151` | Dividers, subtle outlines |
+
+| Token                  | Hex       | Usage                                                     |
+| ---------------------- | --------- | --------------------------------------------------------- |
+| `--color-bg`           | `#1F2428` | Page background (matches logo backdrop)                   |
+| `--color-surface`      | `#2A3036` | Cards, elevated panels                                    |
+| `--color-primary`      | `#2DD4BF` | Teal/cyan accent (circuit glow) — CTAs, links, highlights |
+| `--color-primary-deep` | `#0F766E` | Hover state, darker accent                                |
+| `--color-text`         | `#F5F7FA` | Primary text                                              |
+| `--color-text-muted`   | `#9CA3AF` | Secondary text, captions                                  |
+| `--color-border`       | `#374151` | Dividers, subtle outlines                                 |
 
 ### Typography
+
 - **Headings:** Inter or Space Grotesk (bold, tight tracking — matches the confident sans-serif in the logo wordmark)
 - **Body:** Inter (regular, comfortable reading)
 - **Mono:** JetBrains Mono (for code snippets, technical accents)
 
 ### Visual Motifs
+
 - Subtle circuit-line SVG patterns as section backgrounds (echoes logo)
 - Teal glow on hover for interactive elements
 - Mountain/fjord silhouette accents in hero or footer
@@ -52,6 +55,7 @@ Pulled from the provided logo to keep brand identity consistent across the site.
 **Goal:** A running SvelteKit site with Tailwind, configured for static GitHub Pages deploy.
 
 ### Tasks
+
 1. `npm create svelte@latest fjord-works-site` — choose skeleton project, TypeScript (recommended), ESLint, Prettier
 2. Install Tailwind: `npx svelte-add@latest tailwindcss` (handles postcss config automatically)
 3. Install static adapter: `npm i -D @sveltejs/adapter-static`
@@ -82,6 +86,7 @@ Pulled from the provided logo to keep brand identity consistent across the site.
 8. Commit to `main`, verify `npm run dev` works
 
 ### Exit criteria
+
 Blank SvelteKit site runs locally with Tailwind classes applied. Logo renders on a placeholder home page.
 
 ---
@@ -91,6 +96,7 @@ Blank SvelteKit site runs locally with Tailwind classes applied. Logo renders on
 **Goal:** The nav, footer, and visual language are locked in. Every page built after this inherits it.
 
 ### Tasks
+
 1. Configure Tailwind theme in `tailwind.config.js`:
    - Extend `colors` with the palette above as named tokens (`brand.bg`, `brand.primary`, etc.)
    - Register font families
@@ -108,6 +114,7 @@ Blank SvelteKit site runs locally with Tailwind classes applied. Logo renders on
 5. Favicon + app icons from the logo (use a generator like realfavicongenerator.net, drop output in `static/`)
 
 ### Exit criteria
+
 Navigating between empty route stubs shows consistent header/footer. Design feels cohesive with the logo.
 
 ---
@@ -117,6 +124,7 @@ Navigating between empty route stubs shows consistent header/footer. Design feel
 **Goal:** The marketing spine of the site is live.
 
 ### Home (`/`)
+
 - Hero: logo, headline, subhead, two CTAs (View Work / Get in Touch)
 - "What we do" — 3-column summary of core services
 - "Selected work" — 2–3 featured portfolio items with links
@@ -124,30 +132,35 @@ Navigating between empty route stubs shows consistent header/footer. Design feel
 - Contact CTA band near footer
 
 ### About (`/about`)
+
 - Company story / origin
 - Founder bio(s) with photo
 - Values or approach (3–4 short pillars)
 - Location note (local LLC — mention the region you serve)
 
 ### Services (`/services`)
+
 - Detailed cards or sections per service offering
 - Tech stack capabilities (icons + names)
 - "How we work" — short process (discovery → build → handoff or similar)
 - CTA to contact
 
 ### Contact (`/contact`)
+
 - Short intro copy
 - Form wired to chosen third-party provider (Formspree/Web3Forms) — fields: name, email, company (optional), message, budget range (optional), project type (select)
 - Success/error states handled client-side
 - Alternative contact (direct email, LinkedIn, GitHub)
 
 ### Tasks
+
 - Pull service/about copy from Phase 0 content gathering
 - Build each page using the component library from Phase 2
 - Wire contact form submission, test it end-to-end with a real email delivery
 - Add honeypot field or use provider's built-in spam protection
 
 ### Exit criteria
+
 All four pages are content-complete, responsive, and the contact form delivers a test email.
 
 ---
@@ -157,6 +170,7 @@ All four pages are content-complete, responsive, and the contact form delivers a
 **Goal:** Credibility showcase with depth.
 
 ### Tasks
+
 1. Define portfolio data schema in `src/lib/data/portfolio.ts`:
    ```ts
    { slug, title, client, summary, tags, image, year, problem, solution, outcome, techStack, link? }
@@ -167,6 +181,7 @@ All four pages are content-complete, responsive, and the contact form delivers a
 5. Add "Next project" navigation at bottom of each case study
 
 ### Exit criteria
+
 At least 2–3 real case studies published. Each tells a clear problem → solution → outcome story.
 
 ---
@@ -176,6 +191,7 @@ At least 2–3 real case studies published. Each tells a clear problem → solut
 **Goal:** SEO-friendly content hub with minimal authoring friction.
 
 ### Tasks
+
 1. Configure mdsvex with frontmatter support (title, date, description, tags, author, cover image, draft)
 2. Create `src/posts/` for `.md` files
 3. Build `src/lib/posts.ts` — helper that imports all posts via `import.meta.glob`, sorts by date, filters drafts in production
@@ -186,6 +202,7 @@ At least 2–3 real case studies published. Each tells a clear problem → solut
 8. Write 1–2 launch posts so `/blog` isn't empty on day one
 
 ### Exit criteria
+
 Dropping a new `.md` file in `src/posts/` and pushing to main publishes a new post.
 
 ---
@@ -195,6 +212,7 @@ Dropping a new `.md` file in `src/posts/` and pushing to main publishes a new po
 **Goal:** The site is discoverable and you know who's visiting.
 
 ### Tasks
+
 1. Per-page `<svelte:head>` with unique title, description, canonical URL
 2. Open Graph + Twitter Card meta tags (default fallback + per-page overrides)
 3. Generate OG images — either static per-page designs or a shared branded template
@@ -209,6 +227,7 @@ Dropping a new `.md` file in `src/posts/` and pushing to main publishes a new po
 9. Run Lighthouse audit — target 95+ on all four categories; fix any flagged issues
 
 ### Exit criteria
+
 Lighthouse passes, sitemap + robots.txt live, analytics recording real visits, search console verified.
 
 ---
@@ -218,6 +237,7 @@ Lighthouse passes, sitemap + robots.txt live, analytics recording real visits, s
 **Goal:** `git push` to main → live site in ~2 minutes.
 
 ### Tasks
+
 1. Create `.github/workflows/deploy.yml`:
    - Trigger on push to `main`
    - Node setup, install deps, `npm run build`
@@ -229,6 +249,7 @@ Lighthouse passes, sitemap + robots.txt live, analytics recording real visits, s
 5. Add a status badge to README
 
 ### Exit criteria
+
 Push to main deploys automatically. Custom domain resolves to new site with HTTPS.
 
 ---
@@ -238,6 +259,7 @@ Push to main deploys automatically. Custom domain resolves to new site with HTTP
 **Goal:** Remove rough edges before public announcement.
 
 ### Tasks
+
 - Cross-browser test (Chrome, Firefox, Safari, mobile Safari, mobile Chrome)
 - Accessibility audit — keyboard nav, focus indicators, color contrast, alt text, semantic HTML, aria labels on icon buttons, `prefers-reduced-motion` respected
 - Lighthouse accessibility score ≥95
@@ -249,6 +271,7 @@ Push to main deploys automatically. Custom domain resolves to new site with HTTP
 - Social share preview tested on LinkedIn, Twitter/X, and as a Slack/Discord paste
 
 ### Exit criteria
+
 You'd be comfortable showing this to a potential client cold.
 
 ---

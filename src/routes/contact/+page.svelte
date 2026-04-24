@@ -12,10 +12,16 @@
 	/>
 	<link rel="canonical" href="https://fjordworkssoftware.com/contact" />
 	<meta property="og:title" content="Contact — Fjord Works Software" />
-	<meta property="og:description" content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond." />
+	<meta
+		property="og:description"
+		content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond."
+	/>
 	<meta property="og:url" content="https://fjordworkssoftware.com/contact" />
 	<meta name="twitter:title" content="Contact — Fjord Works Software" />
-	<meta name="twitter:description" content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond." />
+	<meta
+		name="twitter:description"
+		content="Get in touch with Fjord Works Software LLC. Based in Searcy, AR — serving Central Arkansas and beyond."
+	/>
 </svelte:head>
 
 <section class="relative overflow-hidden px-6 py-20">
@@ -30,7 +36,7 @@
 
 		<div class="mt-12 space-y-8">
 			<div>
-				<p class="text-sm text-brand-muted mb-5">
+				<p class="mb-5 text-sm text-brand-muted">
 					The best first step is a short email. Include a brief description of your project, your
 					timeline if you have one, and any constraints we should know about up front.
 				</p>
@@ -40,14 +46,14 @@
 			</div>
 
 			<div class="border-t border-brand-border pt-8">
-				<p class="text-xs font-semibold uppercase tracking-wider text-brand-muted mb-4">
+				<p class="mb-4 text-xs font-semibold tracking-wider text-brand-muted uppercase">
 					Find us online
 				</p>
 				<a
 					href="https://github.com/fjord-works-software"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex items-center gap-2 text-sm text-brand-muted hover:text-brand-primary transition-colors"
+					class="inline-flex items-center gap-2 text-sm text-brand-muted transition-colors hover:text-brand-primary"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +71,10 @@
 			</div>
 
 			<div class="border-t border-brand-border pt-8 text-sm text-brand-muted">
-				<p>Based in <strong class="text-brand-text font-medium">Searcy, AR</strong> · Serving Central Arkansas and beyond.</p>
+				<p>
+					Based in <strong class="font-medium text-brand-text">Searcy, AR</strong> · Serving Central Arkansas
+					and beyond.
+				</p>
 			</div>
 		</div>
 	</div>

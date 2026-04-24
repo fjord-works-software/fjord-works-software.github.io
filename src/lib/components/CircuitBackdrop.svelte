@@ -3,7 +3,7 @@
 </script>
 
 <div class="pointer-events-none absolute inset-0 overflow-hidden {className}" aria-hidden="true">
-	<svg class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+	<svg class="absolute h-full w-full" xmlns="http://www.w3.org/2000/svg">
 		<defs>
 			<pattern id="circuit" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
 				<path

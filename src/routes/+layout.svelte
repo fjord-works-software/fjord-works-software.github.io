@@ -28,7 +28,7 @@
 
 <a
 	href="#main-content"
-	class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-100 focus:rounded focus:bg-brand-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-brand-bg"
+	class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded focus:bg-brand-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-brand-bg"
 >
 	Skip to main content
 </a>
@@ -36,12 +36,16 @@
 <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-bg/95 backdrop-blur-sm">
 	<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 		<a href="/" aria-label="Fjord Works Software — home" class="flex flex-col leading-none">
-			<span class="font-display text-lg font-bold text-brand-text">Fjord Works <span class="font-display text-xs font-semibold uppercase tracking-widest text-brand-primary">Software</span></span>
-			
+			<span class="font-display text-lg font-bold text-brand-text"
+				>Fjord Works <span
+					class="font-display text-xs font-semibold tracking-widest text-brand-primary uppercase"
+					>Software</span
+				></span
+			>
 		</a>
 
 		<ul class="hidden items-center gap-8 md:flex">
-			{#each navLinks as { href, label }}
+			{#each navLinks as { href, label } (href)}
 				<li>
 					<a
 						{href}
@@ -92,7 +96,7 @@
 	{#if menuOpen}
 		<div class="border-t border-brand-border bg-brand-surface px-6 pb-4 md:hidden">
 			<ul class="flex flex-col gap-4 pt-4">
-				{#each navLinks as { href, label }}
+				{#each navLinks as { href, label } (href)}
 					<li>
 						<a
 							{href}
@@ -119,7 +123,12 @@
 		<div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
 			<div>
 				<a href="/" aria-label="Fjord Works Software — home" class="flex flex-col leading-none">
-					<span class="font-display text-lg font-bold text-brand-text">Fjord Works <span class="font-display text-xs font-semibold uppercase tracking-widest text-brand-primary">Software</span></span>
+					<span class="font-display text-lg font-bold text-brand-text"
+						>Fjord Works <span
+							class="font-display text-xs font-semibold tracking-widest text-brand-primary uppercase"
+							>Software</span
+						></span
+					>
 				</a>
 				<p class="mt-4 text-sm text-brand-muted">
 					Custom software solutions built for clarity and longevity.
@@ -127,11 +136,11 @@
 			</div>
 
 			<div>
-				<p class="mb-3 text-xs font-semibold uppercase tracking-wider text-brand-muted">
+				<p class="mb-3 text-xs font-semibold tracking-wider text-brand-muted uppercase">
 					Navigation
 				</p>
 				<ul class="flex flex-col gap-2">
-					{#each navLinks as { href, label }}
+					{#each navLinks as { href, label } (href)}
 						<li>
 							<a {href} class="text-sm text-brand-muted transition-colors hover:text-brand-primary"
 								>{label}</a
@@ -142,7 +151,7 @@
 			</div>
 
 			<div>
-				<p class="mb-3 text-xs font-semibold uppercase tracking-wider text-brand-muted">
+				<p class="mb-3 text-xs font-semibold tracking-wider text-brand-muted uppercase">
 					Get in Touch
 				</p>
 				<a

@@ -3,6 +3,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import { portfolio } from '$lib/data/portfolio';
 </script>
 
 <svelte:head>
@@ -72,7 +73,7 @@
 				alt="Fjord Works Software"
 				class="h-88 w-auto shrink-0 rounded-2xl drop-shadow-lg"
 			/>
-			<h1 class="font-display text-5xl font-bold leading-tight text-brand-text sm:text-6xl">
+			<h1 class="font-display text-5xl leading-tight font-bold text-brand-text sm:text-6xl">
 				Software built to <span class="text-brand-primary">last and perform</span>
 			</h1>
 		</div>
@@ -178,6 +179,52 @@
 
 		<div class="mt-10 text-center">
 			<Button href="/services" variant="ghost">See all services →</Button>
+		</div>
+	</div>
+</section>
+
+<!-- Selected Work -->
+<section class="bg-brand-surface px-6 py-20">
+	<div class="mx-auto max-w-6xl">
+		<SectionHeader
+			eyebrow="Selected Work"
+			heading="Projects we've shipped"
+			lead="A sample of what we've built. Each one designed around a specific problem."
+			center
+		/>
+		<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+			{#each portfolio.slice(0, 3) as project (project.slug)}
+				<a
+					href="/portfolio/{project.slug}"
+					class="group block overflow-hidden rounded-xl border border-brand-border bg-brand-bg transition-colors hover:border-brand-primary"
+				>
+					<div class="aspect-video overflow-hidden">
+						<img
+							src={project.image}
+							alt={project.title}
+							class="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+						/>
+					</div>
+					<div class="p-5">
+						<div class="mb-2 flex flex-wrap gap-1.5">
+							{#each project.tags as tag (tag)}
+								<span
+									class="rounded-full border border-brand-border px-2.5 py-0.5 text-xs font-medium text-brand-muted"
+								>
+									{tag}
+								</span>
+							{/each}
+						</div>
+						<h3 class="mb-1 font-display text-base font-semibold text-brand-text">
+							{project.title}
+						</h3>
+						<p class="text-xs leading-relaxed text-brand-muted">{project.summary}</p>
+					</div>
+				</a>
+			{/each}
+		</div>
+		<div class="mt-10 text-center">
+			<Button href="/portfolio" variant="ghost">View all work →</Button>
 		</div>
 	</div>
 </section>

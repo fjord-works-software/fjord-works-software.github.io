@@ -20,11 +20,14 @@
 
 <div class={center ? 'text-center' : ''}>
 	{#if eyebrow}
-		<p class="text-brand-primary text-sm font-semibold uppercase tracking-wider mb-2">{eyebrow}</p>
+		<p class="mb-2 text-sm font-semibold tracking-wider text-brand-primary uppercase">{eyebrow}</p>
 	{/if}
-	<svelte:element this={"h" + level} class="font-display text-3xl sm:text-4xl font-bold text-brand-text">{heading}</svelte:element>
+	<svelte:element
+		this={'h' + level}
+		class="font-display text-3xl font-bold text-brand-text sm:text-4xl">{heading}</svelte:element
+	>
 	{#if lead}
-		<p class="mt-4 text-brand-muted text-lg {center ? 'mx-auto' : ''} max-w-2xl">{lead}</p>
+		<p class="mt-4 text-lg text-brand-muted {center ? 'mx-auto' : ''} max-w-2xl">{lead}</p>
 	{/if}
 	{#if children}
 		<div class="mt-6">

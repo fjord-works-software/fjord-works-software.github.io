@@ -28,17 +28,17 @@ All routes prerender via `export const prerender = true` in `src/routes/+layout.
 
 All brand colors, fonts, and shadows live in the `@theme {}` block in `src/routes/layout.css`:
 
-| Token | Value |
-|---|---|
-| `brand-bg` | `#1f2428` (page background) |
+| Token           | Value                       |
+| --------------- | --------------------------- |
+| `brand-bg`      | `#1f2428` (page background) |
 | `brand-surface` | `#2a3036` (cards, sections) |
-| `brand-primary` | `#2dd4bf` (teal accent) |
-| `brand-text` | `#f5f7fa` |
-| `brand-muted` | `#9ca3af` |
-| `brand-border` | `#374151` |
-| `font-display` | Space Grotesk |
-| `font-sans` | Inter |
-| `font-mono` | JetBrains Mono |
+| `brand-primary` | `#2dd4bf` (teal accent)     |
+| `brand-text`    | `#f5f7fa`                   |
+| `brand-muted`   | `#9ca3af`                   |
+| `brand-border`  | `#374151`                   |
+| `font-display`  | Space Grotesk               |
+| `font-sans`     | Inter                       |
+| `font-mono`     | JetBrains Mono              |
 
 Use `font-display` on headings and `text-brand-muted` for supporting text.
 
