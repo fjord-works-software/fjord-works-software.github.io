@@ -83,18 +83,25 @@
 <section class="bg-brand-surface px-6 py-16">
 	<div class="mx-auto max-w-4xl">
 		<SectionHeader eyebrow="Founder" heading="Isaac Bailey" />
-		<div class="mt-8 max-w-3xl space-y-4 leading-relaxed text-brand-muted">
-			<p>
-				Isaac Bailey founded Fjord Works Software after 18+ years of professional software
-				development across a wide range of industries and problem domains. A 2008 graduate of
-				Harding University, he has spent his career close to the problems businesses actually face —
-				and building tools that solve them without creating new ones.
-			</p>
-			<p>
-				The idea behind Fjord Works is simple: most small businesses don't need enterprise software
-				or a large agency. They need a capable, straightforward partner who can build exactly what
-				they need and hand it over cleanly.
-			</p>
+		<div class="mt-8 flex flex-col gap-8 sm:flex-row sm:items-start">
+			<img
+				src="/images/IsaacWebsiteHeadshot.png"
+				alt="Isaac Bailey, Founder of Fjord Works Software"
+				class="h-48 w-48 shrink-0 rounded-xl object-cover object-top sm:h-56 sm:w-56"
+			/>
+			<div class="space-y-4 leading-relaxed text-brand-muted">
+				<p>
+					Isaac Bailey founded Fjord Works Software after 18+ years of professional software
+					development across a wide range of industries and problem domains. A 2008 graduate of
+					Harding University, he has spent his career close to the problems businesses actually face —
+					and building tools that solve them without creating new ones.
+				</p>
+				<p>
+					The idea behind Fjord Works is simple: most small businesses don't need enterprise software
+					or a large agency. They need a capable, straightforward partner who can build exactly what
+					they need and hand it over cleanly.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
