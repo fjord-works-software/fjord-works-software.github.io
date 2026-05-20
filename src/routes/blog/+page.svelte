@@ -9,6 +9,7 @@
 		content="Technical writing and insights from Fjord Works Software LLC."
 	/>
 	<link rel="canonical" href="https://fjordworkssoftware.com/blog" />
+	<meta name="robots" content="noindex" />
 	<meta property="og:title" content="Blog — Fjord Works Software" />
 	<meta
 		property="og:description"
