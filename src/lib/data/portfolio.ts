@@ -65,6 +65,7 @@ export const portfolio: PortfolioProject[] = [
 			'Built a progressive web app with React that coaches can save to their home screen like a native app, no install required. Coaches can build and manage lineups for multiple teams, track the batting order across innings, and share a lineup instantly with another coach via QR code.',
 		outcome:
 			'Coaches have a lightweight, always-available tool that lives on their phone and works without an internet connection. Lineup handoffs between coaches take seconds, and nobody loses their place in the order.',
-		techStack: ['React', 'PWA', 'Static Hosting']
+		techStack: ['React', 'PWA', 'Static Hosting'],
+		link: 'https://fjordworkssoftware.com/lineup-tracker/'
 	}
 ];
