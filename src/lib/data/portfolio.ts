@@ -28,5 +28,21 @@ export const portfolio: PortfolioProject[] = [
 			'The club now has a polished, fast website with zero ongoing hosting costs — and full ownership of the source code.',
 		techStack: ['SvelteKit', 'GitHub Pages'],
 		link: 'https://gsdcstl.org'
+	},
+	{
+		slug: 'standlikemen',
+		title: 'Stand Like Men',
+		summary: 'A low-maintenance podcast website with an integrated CMS and automated episode syncing.',
+		tags: ['Website', 'Podcast'],
+		image: '/images/standlikemen.png',
+		year: 2026,
+		problem:
+			'The podcast hosts needed a website but had no appetite for ongoing maintenance. They needed to be able to update their own bios and publish blog posts without a developer, and wanted new episodes to appear automatically.',
+		solution:
+			'Built a statically hosted site with Astro and an integrated CMS so the hosts can manage content without touching code. A scheduled task pulls the latest episodes automatically, keeping the site current with no manual effort.',
+		outcome:
+			'The hosts have a fast, self-managed website that stays up to date on its own — they can publish posts and update bios anytime, and episodes appear without anyone lifting a finger.',
+		techStack: ['Astro', 'CMS', 'Static Hosting'],
+		link: 'https://standlikemen.com'
 	}
 ];
