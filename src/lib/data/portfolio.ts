@@ -4,6 +4,7 @@ interface PortfolioProject {
 	summary: string;
 	tags: string[];
 	image: string;
+	images?: string[];
 	year: number;
 	problem: string;
 	solution: string;
@@ -44,5 +45,26 @@ export const portfolio: PortfolioProject[] = [
 			'The hosts have a fast, self-managed website that stays up to date on its own — they can publish posts and update bios anytime, and episodes appear without anyone lifting a finger.',
 		techStack: ['Astro', 'CMS', 'Static Hosting'],
 		link: 'https://standlikemen.com'
+	},
+	{
+		slug: 'lineup-tracker',
+		title: 'Lineup Tracker',
+		summary:
+			'A mobile-first PWA for managing baseball and softball dugout lineups — shareable via QR code, no app store required.',
+		tags: ['PWA', 'Mobile App', 'Sports'],
+		image: '/images/LineupTrackerHome.png',
+		images: [
+			'/images/LineupTrackerHome.png',
+			'/images/LineupTrackerConfirm.png',
+			'/images/LineupTrackerGame.png'
+		],
+		year: 2026,
+		problem:
+			'Little league and church league coaches needed a simple way to manage batting lineups for multiple teams in the dugout. Paper lineups get lost, and handing off to another coach mid-game, especially between innings, meant losing track of who was up next.',
+		solution:
+			'Built a progressive web app with React that coaches can save to their home screen like a native app, no install required. Coaches can build and manage lineups for multiple teams, track the batting order across innings, and share a lineup instantly with another coach via QR code.',
+		outcome:
+			'Coaches have a lightweight, always-available tool that lives on their phone and works without an internet connection. Lineup handoffs between coaches take seconds, and nobody loses their place in the order.',
+		techStack: ['React', 'PWA', 'Static Hosting']
 	}
 ];

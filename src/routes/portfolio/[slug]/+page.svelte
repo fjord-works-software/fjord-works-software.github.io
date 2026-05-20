@@ -58,11 +58,21 @@
 	</div>
 </section>
 
-<!-- Screenshot -->
+<!-- Screenshot(s) -->
 <div class="px-6">
-	<div class="mx-auto max-w-4xl overflow-hidden rounded-xl border border-brand-border shadow-lg">
-		<img src={project.image} alt="Screenshot of {project.title}" class="w-full" />
-	</div>
+	{#if project.images && project.images.length > 1}
+		<div class="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-3">
+			{#each project.images as src, i (src)}
+				<div class="overflow-hidden rounded-xl border border-brand-border shadow-lg">
+					<img {src} alt="Screenshot {i + 1} of {project.title}" class="w-full" />
+				</div>
+			{/each}
+		</div>
+	{:else}
+		<div class="mx-auto max-w-4xl overflow-hidden rounded-xl border border-brand-border shadow-lg">
+			<img src={project.image} alt="Screenshot of {project.title}" class="w-full" />
+		</div>
+	{/if}
 </div>
 
 <!-- Case study body -->
