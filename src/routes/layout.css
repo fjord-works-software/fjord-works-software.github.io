@@ -14,8 +14,6 @@
 	--font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
 	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-	--shadow-glow: 0 0 20px rgb(45 212 191 / 0.3);
-	--shadow-glow-sm: 0 0 10px rgb(45 212 191 / 0.2);
 }
 
 @layer base {

@@ -1,7 +1,6 @@
-export interface PortfolioProject {
+interface PortfolioProject {
 	slug: string;
 	title: string;
-	client: string;
 	summary: string;
 	tags: string[];
 	image: string;
@@ -17,7 +16,6 @@ export const portfolio: PortfolioProject[] = [
 	{
 		slug: 'gsdcstl',
 		title: 'German Shepherd Dog Club of St. Louis',
-		client: 'German Shepherd Dog Club of St. Louis',
 		summary: "Rebuilt the club's outdated website as a modern static site — no more hosting fees.",
 		tags: ['Website', 'Dog Club'],
 		image: '/images/gsdcstl.png',
